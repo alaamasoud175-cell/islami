@@ -5,10 +5,6 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Image.asset(
-        'assets/images/ArchivePathEntry: pathPrefix="", path="/img_header.png"',
-      ),
-    );
+    return Scaffold();
   }
 }

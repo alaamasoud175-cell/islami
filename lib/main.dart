@@ -1,3 +1,4 @@
+import 'package:basics/core/utils/app_routes.dart';
 import 'package:basics/home/home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -9,9 +10,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomeScreen(),
-
-      // debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: false,
+      initialRoute: AppRoutes.homeRouteName,
+      routes: {AppRoutes.homeRouteName: (context) => HomeScreen()},
       // initialRoute: FacebookScreen.routeName,
       // routes: {
       //   FacebookScreen.routeName:(_) =>FacebookScreen(),
